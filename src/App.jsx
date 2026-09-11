@@ -18,7 +18,7 @@ export default function App() {
     setProducts([]);
     setSearched('');
     try {
-      const response = await fetch(`/api/search?q=${encodeURIComponent(term)}`, { signal: AbortSignal.timeout(25000) });
+      const response = await fetch(`/api/search?q=${encodeURIComponent(term)}`, { signal: AbortSignal.timeout(55000) });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || 'Não foi possível concluir a busca.');
       if (!Array.isArray(data)) throw new Error('A busca retornou uma resposta inválida.');

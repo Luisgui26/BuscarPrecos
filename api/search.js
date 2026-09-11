@@ -45,7 +45,7 @@ export default async function search(req, res) {
       api_key: process.env.SERPAPI_API_KEY,
     });
     const response = await fetch(`https://serpapi.com/search.json?${params}`, {
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.timeout(50000),
     });
 
     if (!response.ok) {
