@@ -38,7 +38,7 @@ export default async function search(req, res) {
 
   try {
     const params = new URLSearchParams({
-      engine: 'google_shopping',
+      engine: 'google_shopping_light',
       q,
       gl: 'br',
       hl: 'pt',

@@ -43,7 +43,7 @@ test('rota de shopping', async (t) => {
       const requestUrl = new URL(url);
       assert.equal(requestUrl.origin + requestUrl.pathname, 'https://serpapi.com/search.json');
       assert.deepEqual(Object.fromEntries(requestUrl.searchParams), {
-        engine: 'google_shopping', q: 'mouse', gl: 'br', hl: 'pt', api_key: 'test-only-secret',
+        engine: 'google_shopping_light', q: 'mouse', gl: 'br', hl: 'pt', api_key: 'test-only-secret',
       });
       assert.equal(options.signal instanceof AbortSignal, true);
       const offer = { title: 'Mouse', source: 'Loja', product_link: 'https://loja.example/produto', thumbnail: 'https://loja.example/image.png', delivery: 'Frete grátis' };

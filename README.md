@@ -11,7 +11,7 @@ Opções consultadas em 11/09/2026 (valores em dólares, sujeitos a alteração)
 | [SerpApi](https://serpapi.com/pricing) | 250 buscas gratuitas/mês | Escolhida: possui mecanismo próprio para Google Shopping e localização para o Brasil. |
 | [SearchApi](https://www.searchapi.io/pricing) | 100 buscas de teste; US$ 40/mês por 10 mil buscas | Integração simples, mas custo mensal inicial maior. |
 
-SerpApi: `GET https://serpapi.com/search.json` com `engine=google_shopping`, `gl=br` e `hl=pt`. A chave é lida somente no servidor. Não há scraping direto de lojas.
+SerpApi: `GET https://serpapi.com/search.json` com `engine=google_shopping_light`, `gl=br` e `hl=pt`. A chave é lida somente no servidor. Não há scraping direto de lojas.
 
 ## Rodar localmente
 
